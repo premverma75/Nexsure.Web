@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Nexsure.DataBridge.DataContext
 {
-    class NexsureAppDbContext
+    public class NexsureAppDbContext
     {
     }
 }
