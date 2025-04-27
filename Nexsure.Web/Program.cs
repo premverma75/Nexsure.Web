@@ -26,6 +26,9 @@ if (!app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+// Use static files middleware for serving JS, CSS, and other static content
+app.UseStaticFiles();
+
 app.UseRouting();
 
 // Use CORS middleware
