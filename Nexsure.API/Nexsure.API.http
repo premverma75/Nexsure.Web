@@ -1,0 +1,6 @@
+@Nexsure.API_HostAddress = http://localhost:5036
+
+GET {{Nexsure.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
