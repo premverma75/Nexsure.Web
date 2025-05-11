@@ -9,11 +9,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="jQuery" Version="3.7.1" />
+    <PackageReference Include="jQuery.UI.Combined" Version="1.14.1" />
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.21.0" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Nexsure.ClientServices\Nexsure.ClientServices.csproj" />
+    <ProjectReference Include="..\Nexsure.DependencyInjection\Nexsure.DependencyInjection.csproj" />
     <ProjectReference Include="..\Nexsure.Entities\Nexsure.Entities.csproj" />
   </ItemGroup>
 

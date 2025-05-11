@@ -1,9 +1,12 @@
+﻿using Nexsure.DependencyInjection.DI_Setup;
+using Nexsure.DependencyInjection.CustomMiddlewares;
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
 builder.Services.AddRazorPages();
+builder.Services.AddNexsureServices();
 
-// Add CORS services
+// CORS
 builder.Services.AddCors(options =>
 {
     options.AddDefaultPolicy(policy =>
@@ -16,28 +19,7 @@ builder.Services.AddCors(options =>
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
-if (!app.Environment.IsDevelopment())
-{
-    app.UseExceptionHandler("/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-    app.UseHsts();
-}
-
-app.UseHttpsRedirection();
-
-// Use static files middleware for serving JS, CSS, and other static content
-app.UseStaticFiles();
-
-app.UseRouting();
-
-// Use CORS middleware
-app.UseCors();
-
-app.UseAuthorization();
-
-app.MapStaticAssets();
-app.MapRazorPages()
-   .WithStaticAssets();
+// ✨ Single clean call
+app.UseNexsureWebPipeline();
 
 app.Run();

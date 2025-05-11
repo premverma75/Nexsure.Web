@@ -9,7 +9,11 @@
   <ItemGroup>
     <Folder Include="Business Model\Request Model\Admin\" />
     <Folder Include="Business Model\Responce Model\Admin\" />
-    <Folder Include="Domain Models\" />
+    <Folder Include="Domain Models\Container\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation.AspNetCore" Version="11.3.0" />
   </ItemGroup>
 
 </Project>
