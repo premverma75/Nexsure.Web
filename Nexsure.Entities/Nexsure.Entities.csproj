@@ -10,6 +10,7 @@
     <Folder Include="Business Model\Request Model\Admin\" />
     <Folder Include="Business Model\Responce Model\Admin\" />
     <Folder Include="Domain Models\Container\" />
+    <Folder Include="Dapper Domain Model\" />
   </ItemGroup>
 
   <ItemGroup>

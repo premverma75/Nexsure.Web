@@ -19,7 +19,8 @@ namespace Nexsure.DependencyInjection.DI_Setup
                     c.SwaggerEndpoint("/swagger/v1/swagger.json", "Nexsure API v1");
                 });
             }
-
+            app.UseDapperSqlConnectionMiddleware();
+            app.UseSqlConnectionMiddleware();
             app.UseHttpsRedirection();
 
             app.UseAuthorization();

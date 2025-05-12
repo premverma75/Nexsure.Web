@@ -12,7 +12,8 @@ namespace Nexsure.DependencyInjection.CustomMiddlewares
                 app.UseExceptionHandler("/Error");
                 app.UseHsts();
             }
-
+            app.UseDapperSqlConnectionMiddleware();
+            app.UseSqlConnectionMiddleware();
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
