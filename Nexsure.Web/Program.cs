@@ -1,8 +1,12 @@
-﻿using Nexsure.DependencyInjection.DI_Setup;
+﻿using Microsoft.EntityFrameworkCore;
+using Nexsure.DataBridge.DataContext;
 using Nexsure.DependencyInjection.CustomMiddlewares;
+using Nexsure.DependencyInjection.DI_Setup;
 
 var builder = WebApplication.CreateBuilder(args);
-
+//builder.Services.AddDbContext<NexsureAppDbContext>(options =>
+//    options.UseSqlServer(
+//        builder.Configuration.GetConnectionString("NexsureConnection")));
 builder.Services.AddRazorPages();
 builder.Services.AddNexsureServices();
 

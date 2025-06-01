@@ -1,6 +1,8 @@
-﻿using Microsoft.OpenApi.Models;
+﻿using FluentValidation.AspNetCore;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.OpenApi.Models;
+using Nexsure.DataBridge.DataContext;
 using Nexsure.DependencyInjection.DI_Setup;
-using FluentValidation.AspNetCore;
 using Nexsure.Service.FluentValidations;
 
 var builder = WebApplication.CreateBuilder(args);
