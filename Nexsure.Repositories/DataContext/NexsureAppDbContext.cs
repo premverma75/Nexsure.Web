@@ -12,5 +12,7 @@ namespace Nexsure.DataBridge.DataContext
 
         public DbSet<Users> Users { get; set; }
         public DbSet<Address> Addresses { get; set; }
+        public DbSet<SidebarMenu> SidebarMenus { get; set; }
+        public DbSet<SidebarMenuItem> SidebarMenuItems { get; set; }
     }
 }

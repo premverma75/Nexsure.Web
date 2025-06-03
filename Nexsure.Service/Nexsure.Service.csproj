@@ -11,9 +11,4 @@
     <ProjectReference Include="..\Nexsure.Repositories\Nexsure.DataBridge.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="BusinessService\IService\" />
-    <Folder Include="BusinessService\Service\" />
-  </ItemGroup>
-
 </Project>
