@@ -1,18 +1,13 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Nexsure.DataBridge.DataContext;
 using Nexsure.DataBridge.Repositories.IRepository;
 using Nexsure.DataBridge.Repositories.Repository;
 using Nexsure.DependencyInjection.DapperImplementationservice;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 namespace Nexsure.DependencyInjection.DI_Setup
 {
     public static class ServiceConfiguration

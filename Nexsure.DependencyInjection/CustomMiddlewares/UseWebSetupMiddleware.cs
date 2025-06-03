@@ -7,7 +7,6 @@ namespace Nexsure.DependencyInjection.CustomMiddlewares
     {
         public static WebApplication UseNexsureWebPipeline(this WebApplication app)
         {
-
             if (!app.Environment.IsDevelopment())
             {
                 app.UseExceptionHandler("/Error");

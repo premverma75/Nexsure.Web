@@ -1,12 +1,7 @@
 ﻿using Nexsure.Entities.Domain_Models.Model;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Nexsure.Entities.Business_Model.Request_Model.User
-{   
+{
     public class UserDto
     {
         public int Id { get; set; }
@@ -22,5 +17,4 @@ namespace Nexsure.Entities.Business_Model.Request_Model.User
         public DateTime UpdatedAt { get; set; }
         // Add any additional properties or methods as needed
     }
-
 }

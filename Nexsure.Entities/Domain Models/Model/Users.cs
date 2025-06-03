@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Nexsure.Entities.Domain_Models.Model
+﻿namespace Nexsure.Entities.Domain_Models.Model
 {
     public class Users
     {
@@ -28,5 +22,4 @@ namespace Nexsure.Entities.Domain_Models.Model
         public DateTime CreatedAt { get; set; }
         public DateTime UpdatedAt { get; set; }
     }
-
 }

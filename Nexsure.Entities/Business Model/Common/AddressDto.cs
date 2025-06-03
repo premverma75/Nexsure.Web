@@ -1,14 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Nexsure.Entities.Business_Model.Common
-{  
-     public class AddressDto
+﻿namespace Nexsure.Entities.Business_Model.Common
+{
+    public class AddressDto
     {
-
         public int Id { get; set; }
         public string Street { get; set; }
         public string City { get; set; }

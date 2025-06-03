@@ -1,7 +1,5 @@
 ﻿using FluentValidation.AspNetCore;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
-using Nexsure.DataBridge.DataContext;
 using Nexsure.DependencyInjection.DI_Setup;
 using Nexsure.Service.FluentValidations;
 

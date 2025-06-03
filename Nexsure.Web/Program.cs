@@ -1,6 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
-using Nexsure.DataBridge.DataContext;
-using Nexsure.DependencyInjection.CustomMiddlewares;
+﻿using Nexsure.DependencyInjection.CustomMiddlewares;
 using Nexsure.DependencyInjection.DI_Setup;
 
 var builder = WebApplication.CreateBuilder(args);

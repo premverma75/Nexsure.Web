@@ -1,10 +1,5 @@
 ﻿using FluentValidation;
 using Nexsure.Entities.Business_Model.Request_Model.User;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Nexsure.Service.FluentValidations
 {
@@ -20,5 +15,4 @@ namespace Nexsure.Service.FluentValidations
                 .WithMessage("Phone number must be in a valid format.");
         }
     }
-
 }

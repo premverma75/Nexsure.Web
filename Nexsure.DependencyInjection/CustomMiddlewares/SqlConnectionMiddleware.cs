@@ -1,11 +1,9 @@
-﻿using System;
-using System.Data;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Builder;
+﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Data.SqlClient;
 using Microsoft.Extensions.Configuration;
 using Nexsure.DataBridge.DataContext;
+using System.Data;
 
 namespace Nexsure.DependencyInjection.CustomMiddlewares
 {
@@ -45,15 +43,14 @@ namespace Nexsure.DependencyInjection.CustomMiddlewares
                 //context.Items["SqlConnection"] = connection;
 
                 //await _next(context); // Continue to the next middleware
-               // public async Task InvokeAsync(HttpContext context, AppDbContext dbContext)
-        
-            // Optional: expose DbContext via context.Items for legacy code access
-            context.Items["NexsureAppDbContext"] = dbContext;
+                // public async Task InvokeAsync(HttpContext context, AppDbContext dbContext)
 
-            // Continue to the next middleware
-            await _next(context);
-        
-    }
+                // Optional: expose DbContext via context.Items for legacy code access
+                context.Items["NexsureAppDbContext"] = dbContext;
+
+                // Continue to the next middleware
+                await _next(context);
+            }
             catch (SqlException ex)
             {
                 // Log detailed SQL error

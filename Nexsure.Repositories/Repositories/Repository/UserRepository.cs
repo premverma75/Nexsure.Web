@@ -1,10 +1,5 @@
 ﻿using Nexsure.DataBridge.Repositories.IRepository;
 using Nexsure.Entities.Domain_Models.Model;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Nexsure.DataBridge.Repositories.Repository
 {
